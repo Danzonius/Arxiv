@@ -1,0 +1,43 @@
+title,author,journal,similarity,summary,url
+"A Machine Learning Based Analytical Framework for Semantic Annotation
+  Requirements","[u'Hamed Hassanzadeh', u'MohammadReza Keyvanpour']","International Journal of Web & Semantic Technology (IJWesT), Vol.
+  2, No. 2, pp. 27-38, Aprill 2011",0.3360969272762574,"  The Semantic Web is an extension of the current web in which information is
+given well-defined meaning. The perspective of Semantic Web is to promote the
+quality and intelligence of the current web by changing its contents into
+machine understandable form. Therefore, semantic level information is one of
+the cornerstones of the Semantic Web. The process of adding semantic metadata
+to web resources is called Semantic Annotation. There are many obstacles
+against the Semantic Annotation, such as multilinguality, scalability, and
+issues which are related to diversity and inconsistency in content of different
+web pages. Due to the wide range of domains and the dynamic environments that
+the Semantic Annotation systems must be performed on, the problem of automating
+annotation process is one of the significant challenges in this domain. To
+overcome this problem, different machine learning approaches such as supervised
+learning, unsupervised learning and more recent ones like, semi-supervised
+learning and active learning have been utilized. In this paper we present an
+inclusive layered classification of Semantic Annotation challenges and discuss
+the most important issues in this field. Also, we review and analyze machine
+learning applications for solving semantic annotation problems. For this goal,
+the article tries to closely study and categorize related researches for better
+understanding and to reach a framework that can map machine learning techniques
+into the Semantic Annotation challenges and requirements.
+",http://arxiv.org/pdf/1104.4950v1
+Engineering Semantic Web Applications by Using Object-Oriented Paradigm,"[u'Amjad Farooq', u'Syed Ahsan', u'Abad Shah']","Journal of Computing, Vol. 2, No. 6, June 2010, NY, USA, ISSN
+  2151-9617",0.3360969272762574,"  The web information resources are growing explosively in number and volume.
+Now to retrieve relevant data from web has become very difficult and
+time-consuming. Semantic Web envisions that these web resources should be
+developed in machine-processable way in order to handle irrelevancy and manual
+processing problems. Whereas, the Semantic Web is an extension of current web,
+in which web resources are equipped with formal semantics about their
+interpretation through machines. These web resources are usually contained in
+web applications and systems, and their formal semantics are normally
+represented in the form of web-ontologies. In this research paper, an
+object-oriented design methodology (OODM) is upgraded for developing semantic
+web applications. OODM has been developed for designing of web applications for
+the current web. This methodology is good enough to develop web applications.
+It also provides a systematic approach for the web applications development but
+it is not helpful in generating machine-pocessable content of web applications
+in their development. Therefore, this methodology needs to be extended. In this
+paper, we propose that extension in OODM. This new extended version is referred
+to as the semantic web object-oriented design methodology (SW-OODM).
+",http://arxiv.org/pdf/1006.4562v1

@@ -33,6 +33,8 @@ class API:
 		# Notify the user
 		print 'Data has been retrieved as self.data\n'
 
+		return self.data
+
 	def select(self, *args):
 		'''
 			Select data based on requests
@@ -77,7 +79,7 @@ class API:
 			This collection will be grouped per article, however.
 			
 			Arguments that are name parsed are:
-				"link"    -> <link title="pdf" href="...">
+				"url"     -> <link title="pdf" href="...">
 				"journal" -> <arxiv:journal_ref ...>
 
 			Will always include attribute title
@@ -93,8 +95,8 @@ class API:
 		self.collection = defaultdict(dict)
 
 		# Make sure title is in the list of arguments and is unique
-		attributes = list(args)
-
+		attributes = list(set([el for el in self.flatten(args)]))
+		
 		# Remove title from the list as it will be inserted automatically
 		attributes.remove('title') if 'title' in attributes else attributes
 
@@ -120,7 +122,7 @@ class API:
 					article[arg] = journal.text if journal != None else ''
 
 				# Same for links
-				elif arg == 'link':
+				elif arg == 'url':
 					link = entry.find('link', {'title': 'pdf'})['href']
 					article[arg] = link
 
@@ -157,7 +159,7 @@ if __name__ == '__main__':
 	arxiv = API('semantic web')
 	arxiv.get(20)
 	select = arxiv.select('author', 'title', 'journal')
-	collect = arxiv.collect('author', 'journal', 'published', 'summary', 'link')
+	collect = arxiv.collect('author', 'journal', 'published', 'summary', 'url')
 	print json.dumps(collect, sort_keys=True, indent=4)
 
 
